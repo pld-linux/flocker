@@ -26,7 +26,7 @@ BuildRequires:	python-setuptools >= 7.0
 #BuildRequires:	python-treq >= 0.2.1
 #BuildRequires:	python-zope.interface >= 4.0.5
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.219
+BuildRequires:	rpmbuild(macros) >= 1.710
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
