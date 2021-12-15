@@ -21,12 +21,11 @@ BuildRequires:	python-netifaces >= 0.8
 BuildRequires:	python-psutil >= 2.1.2
 BuildRequires:	python-pyrsistent >= 0.9.1
 BuildRequires:	python-pytz
-BuildRequires:	python-setuptools
-BuildRequires:	python-setuptools >= 7.0
+BuildRequires:	python-setuptools >= 1:7.0
 #BuildRequires:	python-treq >= 0.2.1
 #BuildRequires:	python-zope.interface >= 4.0.5
 BuildRequires:	rpm-pythonprov
-BuildRequires:	rpmbuild(macros) >= 1.710
+BuildRequires:	rpmbuild(macros) >= 1.714
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
