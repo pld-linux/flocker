@@ -1,4 +1,5 @@
 Summary:	Easily manage Docker containers & their data
+Summary(pl.UTF-8):	Łatwe zarządzanie kontenerami Dockera i ich danymi
 Name:		flocker
 Version:	0.4.0
 Release:	0.1
@@ -37,6 +38,15 @@ of ZFS on Linux. This means that you can run your databases, queues
 and key-value stores in Docker and move them around as easily as the
 rest of your app.
 
+%description -l pl.UTF-8
+Flocker to zarządca wolumenów danych oraz narzędzie do zarządzania
+klastrami Dockera na wielu hostach. Przy jego użyciu można mieć
+kontrolę nad danymi przy użyciu takich samych narzędzi, jakich używa
+się dla aplikacji bezstanowych wykorzystujących potencjał ZFS-a na
+Linuksie. Oznacza to, że można uruchamiać na Dockerze bazy danych,
+kolejki czy przechowalnie danych klucz-wartość i przenosić je tak
+łatwo, jak resztę aplikacji.
+
 %prep
 %setup -q
 %patch0 -p1
@@ -46,6 +56,7 @@ rest of your app.
 
 %install
 rm -rf $RPM_BUILD_ROOT
+
 %py_install
 
 %{__rm} -r $RPM_BUILD_ROOT%{py_sitescriptdir}/flocker/volume/test
